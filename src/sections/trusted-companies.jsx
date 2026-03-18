@@ -1,11 +1,11 @@
 import SectionTitle from "../components/section-title";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 export default function TrustedCompanies() {
     return (
         <section className="flex flex-col items-center">
             <SectionTitle title="Trusted companies" description="A visual collection of our most recent works - each piece crafted with intention, emotion, and style." />
-            <motion.div className="relative max-w-5xl py-20 md:py-26 mt-18 md:w-full overflow-hidden mx-2 md:mx-auto border border-indigo-900 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#401B98]/5 to-[#180027]/10 rounded-3xl p-4 md:p-10 text-white"
+            <Motion.div className="relative max-w-5xl py-20 md:py-26 mt-18 md:w-full overflow-hidden mx-2 md:mx-auto border border-indigo-900 flex flex-col md:flex-row items-center justify-between bg-gradient-to-br from-[#401B98]/5 to-[#180027]/10 rounded-3xl p-4 md:p-10 text-white"
                 initial={{ y: 150, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -37,7 +37,7 @@ export default function TrustedCompanies() {
                 <div className="md:-mr-16 max-md:mt-10">
                     <img className="max-w-xs md:max-w-sm" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/trusted-brand/image-fc6e.png" alt="" />
                 </div>
-            </motion.div>
+            </Motion.div>
         </section>
     );
 }

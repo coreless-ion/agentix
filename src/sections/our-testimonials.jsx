@@ -1,5 +1,5 @@
 import SectionTitle from "../components/section-title";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 export default function OurTestimonials() {
     const testimonials = [
@@ -16,7 +16,7 @@ export default function OurTestimonials() {
             <SectionTitle title="Our testimonials" description="A visual collection of our most recent works - each piece crafted with intention, emotion, and style." />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-18 max-w-6xl mx-auto">
                 {testimonials.map((testimonial, index) => (
-                    <motion.div key={testimonial.name} className="group border border-slate-800 p-6 rounded-xl"
+                    <Motion.div key={testimonial.name} className="group border border-slate-800 p-6 rounded-xl"
                         initial={{ y: 150, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         viewport={{ once: true }}
@@ -32,7 +32,7 @@ export default function OurTestimonials() {
                                 <p className="text-indigo-500">{testimonial.role}</p>
                             </div>
                         </div>
-                    </motion.div>
+                    </Motion.div>
                 ))}
             </div>
         </section>
